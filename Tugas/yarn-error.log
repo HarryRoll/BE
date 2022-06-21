@@ -1,0 +1,62 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\Users\Shall\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js install
+
+PATH: 
+  C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\xampp\php;C:\ProgramData\ComposerSetup\bin;C:\Program Files\Git\cmd;C:\Program Files\nodejs\;C:\Users\Shall\AppData\Local\Microsoft\WindowsApps;C:\Users\Shall\AppData\Roaming\Composer\vendor\bin;G:\Microsoft VS Code\bin;C:\Users\Shall\AppData\Roaming\npm
+
+Yarn version: 
+  1.22.18
+
+Node version: 
+  16.15.0
+
+Platform: 
+  win32 x64
+
+Trace: 
+  Error: https://registry.yarnpkg.com/@babel%2fpresent-env: Not found
+      at Request.params.callback [as _callback] (C:\Users\Shall\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:66138:18)
+      at Request.self.callback (C:\Users\Shall\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:140883:22)
+      at Request.emit (node:events:527:28)
+      at Request.<anonymous> (C:\Users\Shall\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:141855:10)
+      at Request.emit (node:events:527:28)
+      at IncomingMessage.<anonymous> (C:\Users\Shall\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:141777:12)
+      at Object.onceWrapper (node:events:641:28)
+      at IncomingMessage.emit (node:events:539:35)
+      at endReadableNT (node:internal/streams/readable:1345:12)
+      at processTicksAndRejections (node:internal/process/task_queues:83:21)
+
+npm manifest: 
+  {
+    "name": "quiz",
+    "version": "1.0.0",
+    "main": "index.js",
+    "license": "MIT",
+    "scripts": {
+      "start": "nodemon --exec babel-node ./server/index.js"
+    },
+    "dependencies": {
+      "express" : "^4.18.1",
+      "dotenv" : "^16.0.1",
+      "pg" : "^8.7.3",
+      "sequelize" : "^6.21.0",
+      "cors" : "^2.8.5",
+      "cookie-parser" : "^1.4.6",
+      "compression" : "^1.7.4",
+      "helmet" : "^5.1.0"
+    },
+    "devDependencies": {
+      "@babel/core": "7.18.5",
+      "@babel/node": "7.18.5",
+      "@babel/present-env": "7.18.2",
+      "@babel/plugin-transform-runtime" : "7.18.5",
+      "nodemon" : "^2.0.16",
+      "sequelize-auto" : "^0.8.8"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
